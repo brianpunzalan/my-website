@@ -1,0 +1,60 @@
+backend:
+  name: github
+  repo: brianpunzalan/my-website
+  branch: master
+  commit_messages:
+    create: Create {{collection}} “{{slug}}”
+    update: Update {{collection}} “{{slug}}”
+    delete: Delete {{collection}} “{{slug}}”
+    uploadMedia: Upload “{{path}}”
+    deleteMedia: Delete “{{path}}”
+    openAuthoring: '{{message}}'
+media_folder: public/assets
+public_folder: public
+collections:
+  - name: "blog-post"
+    label: "Blog Posts"
+    create: true
+    folder: /src/contents/posts
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "string"
+      - label: "Date Posted"
+        name: "date"
+        widget: "datetime"
+        date_format: "YYYY-MM-DD"
+        time_format: "hh:mm"
+      - label: "Author"
+        name: "author"
+        widget: "object"
+        fields:
+          - label: "Name"
+            name: "name"
+            widget: "string"
+      - label: "og:image"
+        name: "ogImage"
+        widget: "object"
+        fields:
+          - label: "URL"
+            name: "url"
+            widget: "image"
+            default: "/assets/blog-posts/default.svg"
+            media_folder: "/assets/blog-posts"
+            media_library:
+              config:
+                multiple: false
+      - label: "Cover Image"
+        name: "coverImage"
+        widget: "image"
+        default: "/assets/blog-posts/default.svg"
+        media_folder: "/assets/blog-posts"
+        media_library:
+          config:
+            multiple: false
+      - label: "Content"
+        name: "content"
+        widget: "markdown"

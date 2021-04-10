@@ -4,8 +4,8 @@ excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
 coverImage: '/assets/blog-posts/default.svg'
 date: '2020-03-16T05:35:07.322Z'
 author:
-  name: Tim Neutkens
-  picture: '/assets/blog/authors/tim.jpeg'
+  name: Brian Punzalan
+  picture: '/assets/avatar.jpg'
 ogImage:
   url: '/assets/blog-posts/default.svg'
 ---
