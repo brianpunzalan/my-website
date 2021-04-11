@@ -15,7 +15,7 @@ interface Props {
 const ArticleCard = styled.article`
   border: 4px solid ${(props) => props.theme.primaryColor};
   border-radius: 4px;
-  width: 320px;
+  width: 250px;
   height: 460px;
   transition: transform 0.3s;
 

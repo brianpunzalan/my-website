@@ -1,12 +1,18 @@
 import React, { ReactNode } from 'react'
 import { Normalize } from 'styled-normalize'
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   color: inherit;
   body {
     font-family: 'M PLUS Rounded 1c', sans-serif;
   }
+`
+
+const RootContainer = styled.div`
+  background-color: ${(props) => props.theme.secondaryColor};
+  color: ${(props) => props.theme.secondaryColorContrast};
+  min-height: 100vh;
 `
 
 interface Props {
@@ -17,11 +23,11 @@ const RootLayout: React.FC<Props> = (props) => {
   const { children } = props
 
   return (
-    <div id="root">
+    <RootContainer id="root">
       <Normalize />
       <GlobalStyle />
       <main>{children}</main>
-    </div>
+    </RootContainer>
   )
 }
 

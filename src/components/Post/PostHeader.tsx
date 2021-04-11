@@ -18,7 +18,8 @@ const Header = styled.header`
   .header-cover {
     display: flex;
     justify-content: center;
-    width: 100%;
+    max-height: 320px;
+    width: auto;
     > img {
       max-width: 100%;
       height: auto;

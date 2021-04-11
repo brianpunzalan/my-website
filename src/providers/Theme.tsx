@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import { ThemeProvider } from 'styled-components'
 
-interface Theme {
+export interface Theme {
   primaryColor: string
   primaryColorOpaque: string
   primaryColorContrast: string
@@ -12,6 +12,11 @@ interface Theme {
   tertiaryBlueColorContrast: string
   tertiaryYellowColor: string
   tertiaryYellowColorContrast: string
+  breakpointXS: string
+  breakpointSM: string
+  breakpointM: string
+  breakpointLG: string
+  breakpointXL: string
 }
 
 const theme: Theme = {
@@ -25,6 +30,11 @@ const theme: Theme = {
   tertiaryBlueColorContrast: '#fff',
   tertiaryYellowColor: '#e9c46a',
   tertiaryYellowColorContrast: '#000',
+  breakpointXS: '320px',
+  breakpointSM: '425px',
+  breakpointM: '768px',
+  breakpointLG: '1024px',
+  breakpointXL: '1440px',
 }
 
 interface Props {

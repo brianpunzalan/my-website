@@ -16,7 +16,7 @@ interface Props {
 }
 
 const Container = styled.div`
-  padding: 25px;
+  margin-top: 4em;
 `
 
 const HomePage: React.FC<Props> = (props) => {

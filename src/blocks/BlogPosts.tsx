@@ -8,8 +8,9 @@ interface Props {
 }
 
 const Container = styled.div`
-  h1 {
+  > h1 {
     font-size: 1.5rem;
+    text-align: center;
   }
 
   .container {
@@ -18,7 +19,7 @@ const Container = styled.div`
 
     .wrapper {
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
       flex-wrap: wrap;
       margin-left: -20px;
@@ -27,6 +28,18 @@ const Container = styled.div`
       .item {
         margin-left: 20px;
         margin-top: 20px;
+      }
+    }
+  }
+
+  @media screen and (min-width: ${(props) => props.theme.breakpointLG}) {
+    > h1 {
+      text-align: left;
+    }
+
+    .container {
+      .wrapper {
+        justify-content: flex-start;
       }
     }
   }
