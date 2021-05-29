@@ -6,7 +6,6 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import { getPostBySlug, getAllPosts } from '../../lib/api/posts'
-// import markdownToHtml from '../../lib/markdownToHtml'
 import PostLayout from '../../layout/Post'
 import Post from '../../components/Post'
 import PostTitle from '../../components/Post/PostTitle'
@@ -75,7 +74,6 @@ export const getStaticProps: GetStaticProps<
     'ogImage',
     'coverImage',
   ])
-  // const content = await markdownToHtml(post.content as string || '')
 
   return {
     props: {

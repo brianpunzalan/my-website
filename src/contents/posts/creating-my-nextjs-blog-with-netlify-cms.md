@@ -17,7 +17,7 @@ content: |-
   ## Overview
 
   Firstly, we need to understand the stack and the flow of communication between components. For this, I prepared a diagram for easy consumption.
-  
+
   ![mywebsite-stack.jpg](/assets/mywebsite-stack.jpg "Next.js + Netlify")
 
   Github would trigger the build on Netlify whenever there are changes on your specified branch, e.g *master*. 
@@ -44,9 +44,9 @@ content: |-
   Now, what Netlify CMS allows us to do is to have a possiblity to manage content and transform it into Markdown files.
   It would also automatically create a commit to our Git repository since any content changes will also be considered 
   as a code change due to the nature of our stack. 
-  
+
   Our repository would serve as the persistence layer for our content with Markdown files as the medium.
-  
+
   All of these tools perfectly fits our requirement of having a blog website with no backend maintenance even though we kinda have *"dynamic"* content.
   Also with the added benefit of static websites for being fast, secure and virtually no cost to maintain.
 
@@ -198,7 +198,7 @@ content: |-
   We could use `react-markdown`. We just need to pass the `content` as props in the component and it would already parsed it into HTML and renders it. What so good about this is that you could actually extend and override the styling for some HTML components.
 
   ### Integrating Netlify CMS into codebase
-  
+
   Netlify CMS only requires us to expose certain files publicly.
   - `public/admin/config.yml`
   - `public/admin/index.html`
@@ -271,9 +271,11 @@ content: |-
   # Congratulations!
 
   We have finally created our Next.js website utilizing Netlify CMS and Github with the added benefits of static websites. 
-  
+
   The stack follows the concept of **Jamstack**. If you want to learn more, check out its website at [https://jamstack.org/](https://jamstack.org/).
-  
+
   You could view the full source code of my website on my [Github](https://github.com/brianpunzalan/my-website).
 
+  # Reference
+  I have bootstraped my website with `create-next-app` using this example `with-typescript-eslint-jest`.
 ---
