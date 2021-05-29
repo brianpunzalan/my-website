@@ -24,14 +24,15 @@ const ArticleCard = styled.article`
   }
 
   .cover-image {
+    display: flex;
+    justify-content: center;
     background-color: ${(props) => props.theme.primaryColor};
     overflow: hidden;
     padding: 0;
     width: 100%;
-    height: 200px;
     > img {
-      max-width: 100%;
-      height: auto;
+      width: auto;
+      height: 200px;
     }
   }
 
