@@ -1,5 +1,15 @@
 import type { AppProps } from 'next/app'
+import Router from 'next/router'
+import * as NProgress from 'nprogress'
 import Provider from '../containers/Provider'
+
+Router.events.on('routeChangeStart', () => {
+  NProgress.start()
+})
+
+Router.events.on('routeChangeComplete', () => {
+  NProgress.done()
+})
 
 const MyApp: React.FC<AppProps> = (props) => {
   const { Component, pageProps } = props
