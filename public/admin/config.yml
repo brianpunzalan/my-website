@@ -43,7 +43,7 @@ collections:
             name: "url"
             widget: "image"
             default: "/assets/blog-posts/default.svg"
-            media_folder: "/assets/blog-posts"
+            media_folder: "/public/assets/blog-posts"
             media_library:
               config:
                 multiple: false
@@ -51,7 +51,7 @@ collections:
         name: "coverImage"
         widget: "image"
         default: "/assets/blog-posts/default.svg"
-        media_folder: "/assets/blog-posts"
+        media_folder: "/public/assets/blog-posts"
         media_library:
           config:
             multiple: false

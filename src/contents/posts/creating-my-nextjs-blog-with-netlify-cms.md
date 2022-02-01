@@ -6,8 +6,8 @@ date: 2021-05-29T12:42:42.119Z
 author:
   name: Brian Punzalan
 ogImage:
-  url: /assets/blog1-image.jpg
-coverImage: /assets/blog1-image.jpg
+  url: /assets/blog-posts/blog1-image.jpg
+coverImage: /assets/blog-posts/blog1-image.jpg
 content: >-
   ## Introduction
 
@@ -24,7 +24,7 @@ content: >-
   Firstly, we need to understand the stack and the flow of communication between components. For this, I prepared a diagram for easy consumption.
 
 
-  ![mywebsite-stack.jpg](/assets/mywebsite-stack.jpg "Next.js + Netlify")
+  ![mywebsite-stack.jpg](/assets/blog-posts/mywebsite-stack.jpg "Next.js + Netlify")
 
 
   Github would trigger the build on Netlify whenever there are changes on your specified branch, e.g *master*. 
@@ -364,7 +364,7 @@ content: >-
   Once logged in, it would look something like this.
 
 
-  ![netlify-cms-snapshot.jpg](/assets/netlify-cms-snap.jpg "Netlify CMS - Dashboard")
+  ![netlify-cms-snapshot.jpg](/assets/blog-posts/netlify-cms-snap.jpg "Netlify CMS - Dashboard")
 
 
   We can create, update, delete blog posts. We could also attach media files that we could later use for our blog posts. Any changes would automatically push a commit to our Github, thus trigger a build in Netlify, redeploying our website with new changes/contents.
