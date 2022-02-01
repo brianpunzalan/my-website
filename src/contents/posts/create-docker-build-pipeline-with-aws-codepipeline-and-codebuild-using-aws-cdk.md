@@ -28,8 +28,8 @@ content: "If you are looking for template solution to build your Docker
   ## Overview
 
 
-  ![docker-build-pipeline-stack.png](/assets/docker-build-pipeline-stack.png
-  \"Docker Build Pipeline Stack)
+  ![docker-build-pipeline-stack.png](/assets/blog-posts/docker-build-pipeline\
+  -stack.png \"Docker Build Pipeline Stack\")
 
 
   ## Getting Started
